@@ -10,10 +10,10 @@ dotenv.config();
 app.use(express.json());
 
 app.use("/api/auth",authRoutes);
-// app.get("/", (req, res) => {
-//     //rr -> http://localhost:5000/
-//     res.send("Hello World!!!!");
-// });
+app.get("/", (req, res) => {
+    //rr -> http://localhost:5000/
+    res.send("Hello World!!!!");
+});
 
 
 
